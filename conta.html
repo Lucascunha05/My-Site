@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conta usuario</title>
+    <link rel="stylesheet" href="conta.css">
+   
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">Bazar<span> Efata</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">produtos</a></li>
+                    <li><a href="sobre.html">sobre</a></li>
+                    <li><a href="contatos.html">contatos</a></li>
+                    <li><a href="conta.html">conta</a></li>
+
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <img src="imgs/cart.png" />
+                <img src="imgs/menu.png" class="menu-button" />
+            </div>
+        </div>
+    </div>
+    <form>
+
+        <h3>Login</h3>
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit">
+    </form>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button");
+
+        menuButton.addEventListener("click", () => {
+            navbar.classList.toggle("show-menu");
+        });
+    </script>
+</body>
+</html>
